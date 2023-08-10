@@ -127,18 +127,34 @@ body{
     flex-direction: row;
     width:fit-content;
     height: fit-content;
+    overflow-x: scroll;
+    overflow: hidden;
 }
 
 .card{
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 20vw ;
     height: fit-content;
-    
+    border: 1px solid black;
+    margin: 1vw 1vw 1vw 1vw;
+    cursor: pointer;
+}
+
+.card p{
+    font-size: 1.1vw;
+    margin: 1vw 0vw 0vw 1vw;
 }
 
 .hero .item-name{
-    font-size: 1vw;
+    font-size: 1.3vw;
     font-weight: 600;
 }
+
+.card button{
+    margin: 10vw auto auto 2vw;
+}
+
+
 
