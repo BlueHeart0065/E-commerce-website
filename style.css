@@ -162,12 +162,16 @@ body{
     margin-bottom: 2vw;
     overflow: hidden;
     z-index: 1;
+    box-shadow: 0px 20px 30px #ffcaba;
 }
 
 .grid div svg{
+    position: relative;
+    z-index: 1;
     width: 7vw;
     height: 7vw;
     margin: 0vw 3vw 0vw 3vw;
+    filter: drop-shadow(0px 20px 20px #8c2100);
 }
 
 .grid div .rect{
