@@ -71,6 +71,22 @@ body{
     border : 2px solid #edf0f3;
     border-radius: 50px;
     margin: 1vw 1vw 0vw 1vw;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sign-up:hover{
+    /* transform: translateY(-4px); */
+    /* border:none; */
+    background-color: #edf0f3;
+}
+
+.login:hover{
+    background-color: rgb(201, 243, 255);
+}
+
+.sign-up:active , .login:active{
+    transform: translateY(4px);
 }
 
 .sign-up p , .login p{
@@ -89,6 +105,12 @@ body{
     width: 1.7vw ;
     height: 1.7vw;
     margin: 1.3vw 2vw 0vw 0vw;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.topBar .like:hover ,.topBar .cart:hover{
+    transform: translateY(-4px);
 }
 
 .hero{
@@ -134,12 +156,18 @@ body{
     border-radius: 50px;
     margin: 3vw 0vw 0vw 3vw;
     background: none;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .display button p{
-    color: white;
     font-size: 1vw;
     margin: 0.7vw 1.7vw 0.7vw 1.7vw;
+    color: white;
+}
+
+.display button:active{
+    transform: translateY(2px);
 }
 
 .display svg{
@@ -176,13 +204,14 @@ body{
 
 .grid div .rect{
     background-color: #ff845e;
-    margin-top: -6vw;
-    width: 10vw;
+    margin-top: -5vw;
+    width: 11vw;
     border: none;
     transform: rotate(75deg);
     border-radius: 50px;
     height: 20vw;
     z-index: 0;
+    transition: all 0.5s;
 }
 
 
