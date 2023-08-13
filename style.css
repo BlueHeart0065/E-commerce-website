@@ -274,7 +274,25 @@ body{
     margin-top: -11vw;
 }
 
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Lexend';
+    font-weight: 500;
+    color: #3a3a3a;
+}
 
+.cards h1{
+    margin-left: 6vw;
+}
+
+.cards div{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
 
 
 
