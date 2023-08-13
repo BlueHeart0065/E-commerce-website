@@ -148,13 +148,22 @@ body{
     /* text-shadow: 1px 4px 10px #004e98; */
 }
 
+.display img{
+    margin-top: -17vw;
+    margin-left: 3vw;
+    width: 70vw;
+    height: 30vw;
+}
+
 .display button{
+    position: relative;
     border: none;
     width: fit-content;
     height: fit-content;
     border: 2px solid white;
     border-radius: 50px;
-    margin: 3vw 0vw 0vw 3vw;
+    margin: 0vw 0vw 0vw 3vw;
+    top: -10vw;
     background: none;
     cursor: pointer;
     transition: all 0.3s;
@@ -191,20 +200,52 @@ body{
     overflow: hidden;
     z-index: 1;
     box-shadow: 0px 20px 30px #ffcaba;
+    font-family: 'Lexend';
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 600;
 }
 
 .grid div svg{
     position: relative;
     z-index: 1;
-    width: 7vw;
-    height: 7vw;
-    margin: 0vw 3vw 0vw 3vw;
-    filter: drop-shadow(0px 20px 20px #8c2100);
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 1vw 0vw 0vw 9vw;
+    transition: all 0.3s;
+    cursor: pointer;
 }
+
+.grid div p{
+    width: fit-content;
+    position: relative;
+    margin: -2.4vw 0vw 0vw 1vw; 
+    z-index: 1;
+    transition: all 0.3s;
+    
+}
+
+.grid div .itemQuantity{
+    font-size: 0.9vw;
+    margin-top: 0.2vw;
+    font-weight: 300;
+    color: white;
+}
+
+.grid div img{
+    position: relative;
+    width: 9vw;
+    height: 7vw;
+    margin: 1vw 0vw 0vw 1.5vw;
+    border-radius: 10px;
+    z-index: 1;
+    /* filter: drop-shadow(0px 20px 10px #86685e); */
+}
+
 
 .grid div .rect{
     background-color: #ff845e;
-    margin-top: -5vw;
+    margin-top: -10vw;
     width: 11vw;
     border: none;
     transform: rotate(75deg);
@@ -213,6 +254,27 @@ body{
     z-index: 0;
     transition: all 0.5s;
 }
+
+.grid div:hover .rect{
+    margin-top: -11vw;
+}
+
+.grid div:hover svg{
+    margin-top: 0vw;
+}
+
+#more{
+    border: 8px solid #00c197;
+    outline: 8px solid #0081f9;
+    margin-top: -10vw;
+    transition: all 0.3s;
+}
+
+.grid div:hover #more{
+    margin-top: -11vw;
+}
+
+
 
 
 
