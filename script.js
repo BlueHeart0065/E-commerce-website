@@ -14,3 +14,34 @@ viewOffers.onmouseout = () => {
     para.style.color = "white";
 
 }
+
+var best = document.getElementById("Bestsellers");
+var newest = document.getElementById("Newest");
+flag = 0;
+
+newest.onclick = () => {
+    console.log("reached");
+    if(flag == 0){
+        // var para = document.querySelector(".filterSwitch .filter p");
+        newest.style.backgroundColor = "#ff845e";
+        newest.style.boxShadow = "0px 2px 20px #ffbaa7";
+        newest.style.color = "white";
+        best.style.color = "black";
+        best.style.boxShadow = "none";
+        best.style.backgroundColor = "transparent";
+        flag = 1;
+    }
+}
+best.onclick = () => {
+    if(flag == 1){
+        best.style.backgroundColor = "#ff845e";
+        best.style.boxShadow = "0px 2px 20px #ffbaa7";
+        best.style.color = "white";
+        newest.style.color = "black";
+        newest.style.boxShadow = "none";
+        newest.style.backgroundColor = "transparent";
+        flag = 0;
+    }
+}
+
+
