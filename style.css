@@ -399,7 +399,104 @@ body{
     transform: scale(1,1);
 }
 
+@media only screen and (max-width: 800px){
 
+    .topBar .logo{
+        width: 6vw;
+        height: 6vw;
+        margin: 3vw 2vw 3vw 4vw;
+    }
+
+    .topBar p{
+        display: none;
+        font-size: 4vw;
+    }
+
+    .searchBar{
+        margin-top: 2vw;
+        margin-left: 4vw;
+    }
+
+    .searchBar svg{
+        width: 5vw;
+        height: 5vw;
+        margin-left: 4vw;
+        margin-top: 1.5vw;
+    }
+
+    .searchBar input{
+        width: 45vw;
+        height: 6vw;
+        font-size: 3vw;
+        margin-top: 0.5vw;
+        margin-left: 4vw;
+    }
+    
+    .sign-up , .login{
+        display: none;
+    }
+
+    .like{
+        display: none;
+    }
+
+    .topBar .cart{
+        width: 5vw;
+        height: 5vw;
+        margin-left: 4vw;
+        margin-top: 3vw;
+    }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .display{
+        width: 90vw;
+        margin-top: 5vw;
+        margin-left: 4.5vw;
+        height: 55vw;
+    }
+
+    .display p{
+        font-size: 3vw;
+        margin: 10vw 0vw 0vw 5vw;
+    }
+
+    .display h1{
+        font-size: 6vw;
+        width: 40vw;
+        margin: 1vw 0vw 0vw 5vw;
+    }
+
+    .display img{
+        margin-top: -20vw;
+        margin-left: 20vw;
+        width: 90vw;
+        height: 40vw;
+    }
+
+    .display button{
+        margin-left: 5vw;
+        top:-12vw
+    }
+
+    .display button p{
+        font-size: 3vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .grid{
+        margin: 8vw 0vw 0vw 4.5vw;
+    }
+
+    .grid div{
+        width: 30vw;
+        height: 20vw;
+    }
+
+}
 
 
 
