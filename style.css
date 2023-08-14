@@ -324,10 +324,12 @@ body{
 }
 
 .row{
-    width: fit-content;
-    height: fit-content;
+    width: 90vw;
+    max-width: 90vw;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     margin-left: 6vw;
 }
 
@@ -339,6 +341,7 @@ body{
     overflow: hidden;
     background-color: white;
     box-shadow: 0px 0px 10px rgb(210, 210, 210);
+    transition: all 0.5s;
 }
 
 .board img{
@@ -361,6 +364,20 @@ body{
     margin-left: 2vw;
     margin-top: 0.5vw;
     font-size: 1.2vw;
+    color: #3a3a3a;
+}
+
+.stars{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 1vw 0vw 0vw 2vw;
+}
+
+.stars svg{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0vw 0.2vw 0vw 0.2vw;
 }
 
 .price{
@@ -371,21 +388,16 @@ body{
     color: #ff5e2d;
 }
 
-.board button{
-    /* display: none; */
-    border: none;
-    margin: 1vw 1vw 1vw 1vw;
-    background-color: #ff845e;
-    /* background-color: #4a95ff; */
-    color: white;
-    font-family: 'Righteous';
-    width: 18vw;
-    height: 3vw;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1.2vw;
-    box-shadow: 0px 4px 10px #ffb9a3;
+.board:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: 0px 0px 10px #ffb9a3;
+    
 }
+
+.board:active{
+    transform: scale(1,1);
+}
+
 
 
 
