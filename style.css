@@ -191,8 +191,11 @@ body{
 }
 
 .grid{
-    margin: 3vw 0vw 0vw 1vw;
-
+    height: auto;
+    width: 30vw;
+    margin: 3vw 0vw 0vw 0vw;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid div{
@@ -201,6 +204,7 @@ body{
     width: 13vw;
     height: 14vw;
     margin-bottom: 2vw;
+    margin-left: 2vw;
     overflow: hidden;
     z-index: 1;
     box-shadow: 0px 20px 30px #ffcaba;
@@ -249,33 +253,23 @@ body{
 
 .grid div .rect{
     background-color: #ff845e;
-    margin-top: -10vw;
-    width: 11vw;
+    margin-top: -8vw;
+    margin-left: -0.5vw;
+    width: 13vw;
     border: none;
-    transform: rotate(75deg);
+    transform: rotate(70deg);
     border-radius: 50px;
-    height: 20vw;
+    height: 18vw;
     z-index: 0;
     transition: all 0.5s;
 }
 
 .grid div:hover .rect{
-    margin-top: -11vw;
+    margin-top: -10vw;
 }
 
 .grid div:hover svg{
     margin-top: 0vw;
-}
-
-#more{
-    border: 8px solid #00c197;
-    outline: 8px solid #0081f9;
-    margin-top: -10vw;
-    transition: all 0.3s;
-}
-
-.grid div:hover #more{
-    margin-top: -11vw;
 }
 
 .cards{
@@ -402,9 +396,9 @@ body{
 @media only screen and (max-width: 800px){
 
     .topBar .logo{
-        width: 6vw;
-        height: 6vw;
-        margin: 3vw 2vw 3vw 4vw;
+        width: 8vw;
+        height: 8vw;
+        margin: 4vw 2vw 4vw 4vw;
     }
 
     .topBar p{
@@ -418,16 +412,16 @@ body{
     }
 
     .searchBar svg{
-        width: 5vw;
-        height: 5vw;
+        width: 6vw;
+        height: 10vw;
         margin-left: 4vw;
-        margin-top: 1.5vw;
+        margin-top: 1vw;
     }
 
     .searchBar input{
-        width: 45vw;
-        height: 6vw;
-        font-size: 3vw;
+        width: 50vw;
+        height: 10vw;
+        font-size: 4vw;
         margin-top: 0.5vw;
         margin-left: 4vw;
     }
@@ -441,10 +435,10 @@ body{
     }
 
     .topBar .cart{
-        width: 5vw;
-        height: 5vw;
-        margin-left: 4vw;
-        margin-top: 3vw;
+        width: 7vw;
+        height: 7vw;
+        margin-left: 3vw;
+        margin-top: 4vw;
     }
 
     .hero{
@@ -455,45 +449,135 @@ body{
         width: 90vw;
         margin-top: 5vw;
         margin-left: 4.5vw;
-        height: 55vw;
+        height: 100vw;
     }
 
     .display p{
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 10vw 0vw 0vw 5vw;
     }
 
     .display h1{
-        font-size: 6vw;
-        width: 40vw;
+        font-size: 10vw;
+        width: 60vw;
         margin: 1vw 0vw 0vw 5vw;
     }
 
     .display img{
-        margin-top: -20vw;
-        margin-left: 20vw;
-        width: 90vw;
-        height: 40vw;
+        margin-top: -5vw;
+        margin-left: -3vw;
+        width: 130vw;
+        height: 60vw;
     }
 
     .display button{
         margin-left: 5vw;
-        top:-12vw
+        top:-50vw
     }
 
     .display button p{
-        font-size: 3vw;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
+        font-size: 4vw;
+        margin: 4vw 4vw 4vw 4vw;
     }
 
     .grid{
-        margin: 8vw 0vw 0vw 4.5vw;
+        margin: 8vw 0vw 0vw 2.5vw;
+        width: 90vw;
     }
 
     .grid div{
+        width: 40vw;
+        height: 50vw;
+        margin-left: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .grid div img{
         width: 30vw;
-        height: 20vw;
+        height: 25vw;
+        margin-left: 3.5vw;
+    }
+
+    .grid div svg{
+        width: 9vw;
+        height: 9vw;
+        display: none;
+    }
+
+    .grid div p{
+        font-size: 6vw;
+        margin: 5vw 0vw 0vw 5vw;
+    }
+
+    .grid div .itemQuantity{
+        font-size: 4vw;
+    }
+
+    .grid div .rect{
+        width: 40vw;
+        height: 60vw;
+        margin-top: -35vw;
+
+    }
+
+    .cards h1{
+        font-size: 6vw;
+    }
+
+    .filterSwitch{
+        margin-top: 5vw;
+    }
+
+    .filterSwitch .filter{
+        width: 33vw;
+        height: 9vw;
+        font-size: 5vw;
+        padding-top: 2vw;
+        padding-left: 8vw;
+    }
+
+    .row{
+        margin-top: 5vw;
+        margin-left: 2vw;
+        max-width: 95vw;
+        width: 95vw;
+    }
+
+    .board{
+        width: 45vw;
+        height: 85vw;
+    }
+
+    .board img{
+        width: 30vw;
+        height: 30vw;
+        margin-top: 3vw;
+    }
+
+    .category{
+        font-size: 3vw;
+        margin-bottom: 2vw;
+        margin-left: 5vw;
+    }
+
+    .itemName{
+        font-size: 3.5vw;
+        width: 35vw;
+        margin-left: 5vw;
+    }
+
+    .stars{
+        margin-left: 5vw;
+    }
+
+    .stars svg{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .price{
+        margin-left: 5vw;
+        font-size: 5vw;
     }
 
 }
