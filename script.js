@@ -26,7 +26,7 @@ newest.onclick = () => {
         newest.style.backgroundColor = "#ff845e";
         newest.style.boxShadow = "0px 2px 20px #ffbaa7";
         newest.style.color = "white";
-        best.style.color = "black";
+        best.style.color = "#ff5e2d";
         best.style.boxShadow = "none";
         best.style.backgroundColor = "transparent";
         flag = 1;
@@ -37,7 +37,7 @@ best.onclick = () => {
         best.style.backgroundColor = "#ff845e";
         best.style.boxShadow = "0px 2px 20px #ffbaa7";
         best.style.color = "white";
-        newest.style.color = "black";
+        newest.style.color = "#ff5e2d";
         newest.style.boxShadow = "none";
         newest.style.backgroundColor = "transparent";
         flag = 0;
