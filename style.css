@@ -582,6 +582,75 @@ body{
 
 }
 
+.villain{
+    background-color: #3a3a3a;
+    font-family: 'Lexend';
+    margin-top: 5vw;
+}
+
+.villain svg{
+    width: 4vw;
+    height: 4vw;
+    margin: 4vw 0vw 2vw 4vw;
+}
+
+#expanse{
+    font-family: 'Righteous'; 
+    letter-spacing: 2px; 
+    font-size: 3vw;
+    color: white;
+    margin: -6vw 0vw 0vw 9vw;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 300;
+    margin: 4vw 0vw 2vw 4vw;
+}
+
+.links p{
+    margin-right: 6vw;
+}
+
+.line{
+    width: 80vw;
+    height: 0.1vw;
+    background-color: rgb(185, 185, 185);
+    margin-left: 4vw;
+}
+
+.villain h3{
+    color: white;
+    font-weight: 400;
+    margin: 4vw 0vw 2vw 4vw;
+    font-size: 1.8vw;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    height: fit-content;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 4vw;
+    font-size: 1.5vw;
+}
+
+.contact p{
+    margin-top: 1.5vw;
+}
+
+.contact svg{
+    width: 3vw;
+    height: 3vw;
+    margin: 1vw 1vw 1vw 1vw;
+}
+
 
 
 
