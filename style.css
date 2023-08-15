@@ -448,8 +448,10 @@ body{
     border: 1px solid white;
     border-radius: 15px;
     cursor: pointer;
-    margin-left: 4vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
     font-size: 1.5vw;
+    transform: scale(0.8,0.8);
 }
 
 .contact p{
@@ -683,6 +685,8 @@ body{
         margin-left: 6vw;
         width: 35vw;
         margin-top: 4vw;
+        transform: scale(1,1);
+        margin-bottom: 10vw;
     }
 
     .contact p{

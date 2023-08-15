@@ -44,6 +44,17 @@ best.onclick = () => {
     }
 }
 
+//link redirection
 
+var github = document.getElementsByClassName("contact")[0];
+var linkedin = document.getElementsByClassName("contact")[1];
+
+github.onclick = () => {
+    window.location.href = "https://github.com/BlueHeart0065";
+}
+
+linkedin.onclick = () => {
+    window.location.href = "https://www.linkedin.com/in/sahil-batgeri-8a00b4250/";
+}
 
 
